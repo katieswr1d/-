@@ -847,3 +847,4 @@ C:\cs\contacts\ContactBook.Tests\bin\Debug\net8.0\ContactBook.API.pdb
 C:\cs\contacts\ContactBook.Tests\obj\Debug\net8.0\ContactBook.Tests.csproj.CopyComplete
 C:\cs\contacts\ContactBook.Tests\obj\Debug\net8.0\ContactBook.Tests.genruntimeconfig.cache
 C:\cs\contacts\ContactBook.Tests\obj\Debug\net8.0\ref\ContactBook.Tests.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Tests\obj\Debug\net8.0\ContactBook.Tests.sourcelink.json

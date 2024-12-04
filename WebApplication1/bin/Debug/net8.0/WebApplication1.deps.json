@@ -798,7 +798,10 @@
           "Moq": "4.20.72"
         },
         "runtime": {
-          "ContactBook.API.dll": {}
+          "ContactBook.API.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ContactBook.Core/1.0.0": {
@@ -807,7 +810,10 @@
           "Moq": "4.20.72"
         },
         "runtime": {
-          "ContactBook.Core.dll": {}
+          "ContactBook.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ContactBook.DAL/1.0.0": {
@@ -818,7 +824,10 @@
           "Moq": "4.20.72"
         },
         "runtime": {
-          "ContactBook.DAL.dll": {}
+          "ContactBook.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ContactBook.Tests/1.0.0": {
@@ -831,7 +840,10 @@
           "xunit": "2.9.2"
         },
         "runtime": {
-          "ContactBook.Tests.dll": {}
+          "ContactBook.Tests.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

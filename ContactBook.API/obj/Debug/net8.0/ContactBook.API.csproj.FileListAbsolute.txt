@@ -478,3 +478,4 @@ C:\cs\contacts\ContactBook.API\obj\Debug\net8.0\refint\ContactBook.API.dll
 C:\cs\contacts\ContactBook.API\obj\Debug\net8.0\ContactBook.API.pdb
 C:\cs\contacts\ContactBook.API\obj\Debug\net8.0\ContactBook.API.genruntimeconfig.cache
 C:\cs\contacts\ContactBook.API\obj\Debug\net8.0\ref\ContactBook.API.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.API\obj\Debug\net8.0\ContactBook.API.sourcelink.json

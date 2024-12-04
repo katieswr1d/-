@@ -105,3 +105,4 @@ C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.dll
 C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\refint\ContactBook.Core.dll
 C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.pdb
 C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ref\ContactBook.Core.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.sourcelink.json
