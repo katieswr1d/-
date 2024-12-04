@@ -1,0 +1,10 @@
+# базовый адрес моего API
+@WebApplication1_HostAddress = http://localhost:3030
+
+# получить список всех контактов
+GET {{WebApplication1_HostAddress}}/api/contacts
+Accept: application/json
+
+
+
+###

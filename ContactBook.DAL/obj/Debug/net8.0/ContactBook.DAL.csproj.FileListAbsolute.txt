@@ -1,0 +1,121 @@
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactB.023F02E0.Up2Date
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\RiderProjects\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.sourcelink.json
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactB.023F02E0.Up2Date
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Documents\GitHub\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\cs\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\cs\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\cs\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\cs\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\cs\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CopyComplete
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\cs\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactB.023F02E0.Up2Date
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\Yuriy\Desktop\School\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactB.023F02E0.Up2Date
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Desktop\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CopyComplete
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\maxim\OneDrive\Рабочий стол\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactB.023F02E0.Up2Date
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Desktop\контакты\контакты\ContactBook\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.deps.json
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\bin\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.AssemblyReference.cache
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfoInputs.cache
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.AssemblyInfo.cs
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.csproj.CoreCompileInputs.cache
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactB.023F02E0.Up2Date
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
