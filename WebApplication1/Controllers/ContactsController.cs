@@ -1,5 +1,4 @@
 ﻿using ContactBook.Core.Entity;
-using ContactBook.Core.Services;
 using ContactBook.DAL.Data;
 
 namespace WebApplication1.Controllers;
@@ -11,28 +10,31 @@ using Microsoft.EntityFrameworkCore;
 [ApiController]
 public class ContactsController : ControllerBase
 {
-    private IContactService _contactService; 
+    private readonly ContactBookDbContext _context;
 
-    public ContactsController(IContactService contactService)
+    public ContactsController(ContactBookDbContext context)
     {
-        _contactService = contactService; //DI(в создаваемые контроллеры прокидывает сервисы и др и даже наши зависимости туда идут) почитать
-
+        _context = context;
     }
 
     // Получить все контакты
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Contact>>> GetContacts()
     {
-        var contacts = await _contactService.ReadAll();
+        var contacts = await _context.contacts
+            .Include(c => c.Phones) // Загружаем список номеров телефонов
+            .Include(c => c.Emails) // Загружаем список email
+            .ToListAsync();
 
-        return Ok(contacts);//200  ок
+        return Ok(contacts);
     }
 
     // Добавить новый контакт
     [HttpPost]
-    public async Task<ActionResult<Contact>> CreateContact(Contact contact)
+    public async Task<ActionResult<Contact>> PostContact(Contact contact)
     {
-        _contactService.Create(contact);
+        _context.contacts.Add(contact);
+        await _context.SaveChangesAsync();
 
         return CreatedAtAction(nameof(GetContact), new { id = contact.Id }, contact);
     }
@@ -41,12 +43,21 @@ public class ContactsController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<Contact>> GetContact(int id)
     {
-        
-        return Ok(await _contactService.GetById(id));
+        var contact = await _context.contacts
+            .Include(c => c.Phones) // Загружаем список номеров телефонов
+            .Include(c => c.Emails) // Загружаем список email
+            .FirstOrDefaultAsync(c => c.Id == id); // Используем FirstOrDefaultAsync для поиска по id
+
+        if (contact == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(contact);
     }
 
 
-    // Поиск контактов по всему
+    // Поиск контактов по имени или номеру телефона
     [HttpGet("search")]
     
     public async Task<ActionResult<IEnumerable<Contact>>> SearchContacts(string query)
@@ -55,9 +66,17 @@ public class ContactsController : ControllerBase
         {
             return BadRequest("Search query cannot be empty.");
         }
-        
 
-        return Ok(_contactService.FindByAll(query));
+        var contacts = await _context.contacts
+            .Include(c => c.Phones) // Загружаем связанные данные
+            .Include(c => c.Emails) // Загружаем список email
+            .Where(c => c.FirstName.Contains(query) || 
+                    c.LastName.Contains(query) || 
+                    c.Phones.Any(p => p.Value.Contains(query)) || 
+                    c.Emails.Any(e => e.Value.Contains(query))) // Проверка email
+            .ToListAsync();
+
+        return Ok(contacts);
 }
 
 

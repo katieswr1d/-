@@ -18,17 +18,7 @@ public class ContactService : IContactService
         await _repository.Create(firstName, lastName, emailList, phoneNumberList);
         return true;
     }
-    public async Task<bool> Create(Contact contact)
-    {
-        await _repository.Create(contact);
-        return true;
-    }
 
-    public async Task<Contact> GetById(int id)
-    {
-        return await _repository.GetById(id);
-        
-    }
     public async Task<bool> Clear()
     {
         await _repository.Clear();
@@ -40,34 +30,20 @@ public class ContactService : IContactService
         return await _repository.ReadAll();
     }
 
-    public int Count()
-    {
-        return _repository.Count();
-    }
     public async Task<IEnumerable<Contact>> FindByAll(string firstName, string lastName, string phoneNumber, string email)
     {
         var contacts = await _repository.FilterContacts(contact =>
             string.Equals(contact.FirstName, firstName, StringComparison.CurrentCultureIgnoreCase) &&
             string.Equals(contact.LastName, lastName, StringComparison.CurrentCultureIgnoreCase) &&
-            contact.PhoneNumberList.Any(phone => phone.Value == phoneNumber) &&
-            contact.EmailList.Any(mail => mail.Value == email));
-        return contacts;
-    }
-    
-    public async Task<IEnumerable<Contact>> FindByAll(string query)
-    {
-        var contacts = await _repository.FilterContacts(contact =>
-            string.Equals(contact.FirstName, query, StringComparison.CurrentCultureIgnoreCase) ||
-            string.Equals(contact.LastName, query, StringComparison.CurrentCultureIgnoreCase) ||
-            contact.PhoneNumberList.Any(phone => phone.Value == query) ||
-            contact.EmailList.Any(mail => mail.Value == query));
+            contact.Phones.Any(phone => phone.Value == phoneNumber) &&
+            contact.Emails.Any(mail => mail.Value == email));
         return contacts;
     }
 
     public async Task<IEnumerable<Contact>> FindByPhone(string phoneNumber)
     {
         var contacts = await _repository.FilterContacts(contact =>
-            contact.PhoneNumberList.Any(phone => phone.Value == phoneNumber));
+            contact.Phones.Any(phone => phone.Value == phoneNumber));
         return contacts;
     }
 
@@ -88,9 +64,12 @@ public class ContactService : IContactService
     public async Task<IEnumerable<Contact>> FindByEmail(string email)
     {
         var contacts = await _repository.FilterContacts(contact =>
-            contact.EmailList.Any(mail => mail.Value == email));
+            contact.Emails.Any(mail => mail.Value == email));
         return contacts;
     }
-    
-    
+    public int Count()
+    {
+        return _repository.Count();
+    }
+
 }

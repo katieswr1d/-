@@ -21,7 +21,6 @@ class Program
         await context.Database.EnsureCreatedAsync();
 
         ContactService service = new ContactService(new FileRepository(context));
-
         string option = string.Empty;
         while (option != "0")
         {

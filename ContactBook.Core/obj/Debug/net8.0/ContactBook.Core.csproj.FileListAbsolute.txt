@@ -93,3 +93,15 @@ C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Core\obj\Debug\net8.0\Conta
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Core\obj\Debug\net8.0\refint\ContactBook.Core.dll
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.pdb
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Core\obj\Debug\net8.0\ref\ContactBook.Core.dll
+C:\cs\contacts\ContactBook.Core\bin\Debug\net8.0\ContactBook.Core.deps.json
+C:\cs\contacts\ContactBook.Core\bin\Debug\net8.0\ContactBook.Core.dll
+C:\cs\contacts\ContactBook.Core\bin\Debug\net8.0\ContactBook.Core.pdb
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.csproj.AssemblyReference.cache
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.AssemblyInfoInputs.cache
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.AssemblyInfo.cs
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.csproj.CoreCompileInputs.cache
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.dll
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\refint\ContactBook.Core.dll
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ContactBook.Core.pdb
+C:\cs\contacts\ContactBook.Core\obj\Debug\net8.0\ref\ContactBook.Core.dll

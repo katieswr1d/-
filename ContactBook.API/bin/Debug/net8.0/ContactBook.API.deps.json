@@ -446,10 +446,7 @@
           "Moq": "4.20.72"
         },
         "runtime": {
-          "ContactBook.Core.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ContactBook.Core.dll": {}
         }
       },
       "ContactBook.DAL/1.0.0": {
@@ -460,10 +457,7 @@
           "Moq": "4.20.72"
         },
         "runtime": {
-          "ContactBook.DAL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ContactBook.DAL.dll": {}
         }
       }
     }

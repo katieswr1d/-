@@ -5,10 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ContactBook.Core.Entity;
-using System.Reflection.Metadata;
-using System.Numerics;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using System.Reflection.Emit;
 
 namespace ContactBook.DAL.Data
 {
@@ -21,25 +17,21 @@ namespace ContactBook.DAL.Data
         {
         }
 
-        public ContactBookDbContext() 
+        public ContactBookDbContext()
         {
-            
+           
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)//создает модель (поля контакта)-проверка есть ли они
         {
             modelBuilder.Entity<Contact>().HasKey(c => c.Id);
             modelBuilder.Entity<PhoneNumber>().HasKey(p => p.Id);
-            modelBuilder.Entity<Email>().HasKey(p => p.Id);
-            modelBuilder.Entity<Contact>().HasMany(c => c.PhoneNumberList).WithOne().OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Contact>().HasMany(c => c.EmailList).WithOne().OnDelete(DeleteBehavior.Cascade);
-
+            modelBuilder.Entity<Email>().HasKey(e => e.Id);
+            modelBuilder.Entity<Contact>().HasMany(c => c.Phones).WithOne(p => p.Contact).IsRequired().HasForeignKey(p => p.ContactId).OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Contact>().HasMany(c => c.Emails).WithOne(p => p.Contact).IsRequired().HasForeignKey(p => p.ContactId).OnDelete(DeleteBehavior.Cascade);
             base.OnModelCreating(modelBuilder);
+
+
         }
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)//создает модель (поля контакта)-проверка есть ли они
-        {
-            modelBuilder.Entity<Contact>().HasKey(r => r.Id);
-            modelBuilder.Entity<PhoneNumber>().HasKey(p => p.Id);
-        }*/
     }
 }

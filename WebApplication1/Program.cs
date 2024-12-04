@@ -1,5 +1,3 @@
-using System.Collections.Immutable;
-using ContactBook.Core.Services;
 using ContactBook.DAL;
 using Microsoft.EntityFrameworkCore; // Для работы с Entity Framework Core
 using ContactBook.DAL.Data; // Пространство имен для вашего контекста базы данных
@@ -10,9 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Добавление контекста базы данных
 builder.Services.AddDbContext<ContactBookDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-builder.Services.AddScoped<IContactService, ContactService>();//зарегестрировали сервис
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))); // Замените на вашу строку подключения
 
 // Добавление репозитория
 builder.Services.AddScoped<IRepositoty, FileRepository>(); // Регистрация репозитория

@@ -16,35 +16,12 @@ public class FileRepository : IRepositoty
         _context = context; // Присваиваем контекст, переданный в конструктор
     }
 
-    // Метод для создания нового контакта(по частям)
+    // Метод для создания нового контакта
     public async Task<bool> Create(string firstName, string lastName, List<string> emailList,
         List<string> phoneNumberList)
-    {
-
-        var emails = emailList.Select(e => new Email(e)).ToList();
-        var phones = phoneNumberList.Select(p => new PhoneNumber(p)).ToList();
-
-
-        var contact = new Contact
-        {
-            FirstName = firstName,
-            LastName = lastName,
-            EmailList = emails,
-            PhoneNumberList = phones
-        };
-
+    {        
         // Добавляем новый контакт в контекст
-        _context.contacts.Add(contact);
-        await _context.SaveChangesAsync(); // Сохраняем изменения в базе данных
-        return true;
-    }
-    
-    //Метод такой же но принимает готовый контакт 
-    public async Task<bool> Create(Contact contact)
-    {
-        
-        // Добавляем новый контакт в контекст
-        _context.contacts.Add(contact);
+        _context.contacts.Add(new Contact(firstName, lastName, emailList, phoneNumberList));
         await _context.SaveChangesAsync(); // Сохраняем изменения в базе данных
         return true;
     }
@@ -54,8 +31,8 @@ public class FileRepository : IRepositoty
     {
         // Возвращаем список всех контактов с подгруженными связанными данными
         return await _context.contacts
-            .Include(c => c.EmailList) // Подгружает списки email
-            .Include(c => c.PhoneNumberList) // Подгружает списки телефонов
+            .Include(c => c.Emails) // Подгружает списки email
+            .Include(c => c.Phones) // Подгружает списки телефонов
             .ToListAsync(); // Асинхронное выполнение
     }
 
@@ -64,14 +41,12 @@ public class FileRepository : IRepositoty
     {
         // Получаем все контакты и фильтруем их по заданному предикату
         var contacts = await _context.contacts
-            .Include(c => c.EmailList) // Подгружает списки email
-            .Include(c => c.PhoneNumberList) // Подгружает списки телефонов
+            .Include(c => c.Emails) // Подгружает списки email
+            .Include(c => c.Phones) // Подгружает списки телефонов
             .ToListAsync(); // Асинхронное выполнение
 
         return contacts.Where(predicate); // Применяем предикат для фильтрации
     }
-    
-    
     /*
      * Функция Include() в LINQ служит для жадной загрузки связанных сущностей, предотвращая тем самым проблему N+1 запроса.
      * Она дополняет основной запрос данными о связях, выполняя по существу функцию SQL JOIN.
@@ -93,38 +68,22 @@ public class FileRepository : IRepositoty
     }*/
 
     // Метод для удаления всех контактов
-   // public async Task Clear()
-   // {
-        //IQueriable vs IEnumerable
-     //   _context.contacts.RemoveRange(_context.contacts);// Удаляем все контакты из контекста
-    //}
-    public int Count()
-    {
-        return _context.contacts.Count();
-    }
-
-
     public async Task Clear()
     {
+        //IQueriable vs IEnumerable
         //_context.contacts.RemoveRange(_context.contacts);
         foreach (Contact contact in _context.contacts)
         {
             _context.contacts.Remove(contact);
         }
-        await _context.SaveChangesAsync(); // Сохраняем изменения в базе данных
+        await _context.SaveChangesAsync();
     }
-    public async Task<Contact> GetById(int id)
+    public int Count()
     {
-        var contact = await _context.contacts
-            .Include(c => c.PhoneNumberList) // Загружаем список номеров телефонов
-            .Include(c => c.EmailList) // Загружаем список email
-            .FirstOrDefaultAsync(c => c.Id == id); // Используем FirstOrDefaultAsync для поиска по id
-
-        if (contact == null) throw new NullReferenceException();
-
-        return contact;
+        return _context.contacts.Count();
     }
-} 
-        //IEnumerable работает со всем массивом данных, а IQueryable с отфильтрованным.
-        //IEnumerable получает все данные на стороне сервера и загружает их в память а затем позволяет сделать фильтрацию по данным из памяти.
-        //Когда делается запрос к базе данных, IQueryable выполняет запрос на серверной стороне и в запросе применяет фильтрацию.
+
+} // Удаляем все контакты из контекста
+  //IEnumerable работает со всем массивом данных, а IQueryable с отфильтрованным.
+  //IEnumerable получает все данные на стороне сервера и загружает их в память а затем позволяет сделать фильтрацию по данным из памяти.
+  //Когда делается запрос к базе данных, IQueryable выполняет запрос на серверной стороне и в запросе применяет фильтрацию.
