@@ -18,7 +18,17 @@ public class ContactService : IContactService
         await _repository.Create(firstName, lastName, emailList, phoneNumberList);
         return true;
     }
+    public async Task<bool> Create(Contact contact)
+    {
+        await _repository.Create(contact);
+        return true;
+    }
 
+    public async Task<Contact> GetById(int id)
+    {
+        return await _repository.GetById(id);
+        
+    }
     public async Task<bool> Clear()
     {
         await _repository.Clear();
@@ -37,6 +47,16 @@ public class ContactService : IContactService
             string.Equals(contact.LastName, lastName, StringComparison.CurrentCultureIgnoreCase) &&
             contact.Phones.Any(phone => phone.Value == phoneNumber) &&
             contact.Emails.Any(mail => mail.Value == email));
+        return contacts;
+    }
+    
+    public async Task<IEnumerable<Contact>> FindByAll(string query)
+    {
+        var contacts = await _repository.FilterContacts(contact =>
+            string.Equals(contact.FirstName, query, StringComparison.CurrentCultureIgnoreCase) ||
+            string.Equals(contact.LastName, query, StringComparison.CurrentCultureIgnoreCase) &&
+            contact.Phones.Any(phone => phone.Value == query) &&
+            contact.Emails.Any(mail => mail.Value == query));
         return contacts;
     }
 

@@ -1,4 +1,5 @@
 ﻿using ContactBook.Core.Entity;
+using ContactBook.Core.Services;
 using ContactBook.DAL.Data;
 
 namespace WebApplication1.Controllers;
@@ -10,31 +11,28 @@ using Microsoft.EntityFrameworkCore;
 [ApiController]
 public class ContactsController : ControllerBase
 {
-    private readonly ContactBookDbContext _context;
+    private IContactService _contactService; 
 
-    public ContactsController(ContactBookDbContext context)
+    public ContactsController(IContactService contactService)
     {
-        _context = context;
+        _contactService = contactService; //DI(в создаваемые контроллеры прокидывает сервисы и др и даже наши зависимости туда идут) почитать
+
     }
 
     // Получить все контакты
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Contact>>> GetContacts()
     {
-        var contacts = await _context.contacts
-            .Include(c => c.Phones) // Загружаем список номеров телефонов
-            .Include(c => c.Emails) // Загружаем список email
-            .ToListAsync();
+        var contacts = await _contactService.ReadAll();
 
-        return Ok(contacts);
+        return Ok(contacts);//200  ок
     }
 
     // Добавить новый контакт
     [HttpPost]
-    public async Task<ActionResult<Contact>> PostContact(Contact contact)
+    public async Task<ActionResult<Contact>> CreateContact(Contact contact)
     {
-        _context.contacts.Add(contact);
-        await _context.SaveChangesAsync();
+        _contactService.Create(contact);
 
         return CreatedAtAction(nameof(GetContact), new { id = contact.Id }, contact);
     }
@@ -43,21 +41,12 @@ public class ContactsController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<Contact>> GetContact(int id)
     {
-        var contact = await _context.contacts
-            .Include(c => c.Phones) // Загружаем список номеров телефонов
-            .Include(c => c.Emails) // Загружаем список email
-            .FirstOrDefaultAsync(c => c.Id == id); // Используем FirstOrDefaultAsync для поиска по id
-
-        if (contact == null)
-        {
-            return NotFound();
-        }
-
-        return Ok(contact);
+        
+        return Ok(await _contactService.GetById(id));
     }
 
 
-    // Поиск контактов по имени или номеру телефона
+    // Поиск контактов по всему
     [HttpGet("search")]
     
     public async Task<ActionResult<IEnumerable<Contact>>> SearchContacts(string query)
@@ -67,17 +56,11 @@ public class ContactsController : ControllerBase
             return BadRequest("Search query cannot be empty.");
         }
 
-        var contacts = await _context.contacts
-            .Include(c => c.Phones) // Загружаем связанные данные
-            .Include(c => c.Emails) // Загружаем список email
-            .Where(c => c.FirstName.Contains(query) || 
-                    c.LastName.Contains(query) || 
-                    c.Phones.Any(p => p.Value.Contains(query)) || 
-                    c.Emails.Any(e => e.Value.Contains(query))) // Проверка email
-            .ToListAsync();
+
+        var contacts = await _contactService.FindByAll(query);
 
         return Ok(contacts);
-}
+    }
 
 
 }
@@ -96,7 +79,7 @@ public class ContactsController : ControllerBase
 
   Корс это хуйня браузера, которая позволяет нам пиздить, например при создании сайта,
   всякие картинки, стили, шрифты из других разных источников.
-  Типо, есть наш сайт domenA.com и есть domenB.com, вот наш это доменА, 
-  а тот, с которого мы пиздим это доменБ, и вот этот Корс даёт нам как раз возможность спиздить 
+  Типо, есть наш сайт domenA.com и есть domenB.com, вот наш это доменА,
+  а тот, с которого мы пиздим это доменБ, и вот этот Корс даёт нам как раз возможность спиздить
   что-то откуда-то. потому что изначально так делать нельзя, а благодаря этому корсу можно
 */

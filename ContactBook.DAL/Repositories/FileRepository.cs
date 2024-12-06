@@ -16,12 +16,36 @@ public class FileRepository : IRepositoty
         _context = context; // Присваиваем контекст, переданный в конструктор
     }
 
-    // Метод для создания нового контакта
+   
+    // Метод для создания нового контакта(по частям)
     public async Task<bool> Create(string firstName, string lastName, List<string> emailList,
         List<string> phoneNumberList)
-    {        
+    {
+
+        var emails = emailList.Select(e => new Email(e)).ToList();
+        var phones = phoneNumberList.Select(p => new PhoneNumber(p)).ToList();
+
+
+        var contact = new Contact
+        {
+            FirstName = firstName,
+            LastName = lastName,
+            Emails = emails,
+            Phones = phones
+        };
+
         // Добавляем новый контакт в контекст
-        _context.contacts.Add(new Contact(firstName, lastName, emailList, phoneNumberList));
+        _context.contacts.Add(contact);
+        await _context.SaveChangesAsync(); // Сохраняем изменения в базе данных
+        return true;
+    }
+    
+    //Метод такой же но принимает готовый контакт 
+    public async Task<bool> Create(Contact contact)
+    {
+        
+        // Добавляем новый контакт в контекст
+        _context.contacts.Add(contact);
         await _context.SaveChangesAsync(); // Сохраняем изменения в базе данных
         return true;
     }
@@ -68,6 +92,19 @@ public class FileRepository : IRepositoty
     }*/
 
     // Метод для удаления всех контактов
+   
+
+public async Task<Contact> GetById(int id)
+{
+    var contact = await _context.contacts
+        .Include(c => c.Phones) // Загружаем список номеров телефонов
+        .Include(c => c.Emails) // Загружаем список email
+        .FirstOrDefaultAsync(c => c.Id == id); // Используем FirstOrDefaultAsync для поиска по id
+
+    if (contact == null) throw new NullReferenceException();
+
+    return contact;
+}
     public async Task Clear()
     {
         //IQueriable vs IEnumerable
