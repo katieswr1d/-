@@ -409,3 +409,4 @@ C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.API\obj\Debug\net8.0\refint
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.API\obj\Debug\net8.0\ContactBook.API.pdb
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.API\obj\Debug\net8.0\ContactBook.API.genruntimeconfig.cache
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.API\obj\Debug\net8.0\ref\ContactBook.API.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.API\obj\Debug\net8.0\ContactBook.API.sourcelink.json

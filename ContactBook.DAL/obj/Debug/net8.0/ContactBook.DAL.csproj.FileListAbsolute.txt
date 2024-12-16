@@ -119,3 +119,4 @@ C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\Contac
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\refint\ContactBook.DAL.dll
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.pdb
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ref\ContactBook.DAL.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.DAL\obj\Debug\net8.0\ContactBook.DAL.sourcelink.json

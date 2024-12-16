@@ -691,3 +691,4 @@ C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Tests\obj\Debug\net8.0\refi
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Tests\obj\Debug\net8.0\ContactBook.Tests.pdb
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Tests\obj\Debug\net8.0\ContactBook.Tests.genruntimeconfig.cache
 C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Tests\obj\Debug\net8.0\ref\ContactBook.Tests.dll
+C:\Users\AsusT\Documents\GitHub\contacts\ContactBook.Tests\obj\Debug\net8.0\ContactBook.Tests.sourcelink.json

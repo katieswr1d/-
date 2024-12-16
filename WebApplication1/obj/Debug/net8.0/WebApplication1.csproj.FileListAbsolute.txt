@@ -173,3 +173,4 @@ C:\Users\AsusT\Documents\GitHub\contacts\WebApplication1\obj\Debug\net8.0\refint
 C:\Users\AsusT\Documents\GitHub\contacts\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\AsusT\Documents\GitHub\contacts\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\AsusT\Documents\GitHub\contacts\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\AsusT\Documents\GitHub\contacts\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
