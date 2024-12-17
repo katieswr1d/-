@@ -3,10 +3,6 @@ using System.ComponentModel;
 using ContactBook.Core.Entity;
 using WpfApp1.Services;
 
-
-
-namespace WpfApp1.ViewModels;
-
 public class MainViewModel : INotifyPropertyChanged
 {
     private readonly ApiService _apiService;
@@ -16,20 +12,50 @@ public class MainViewModel : INotifyPropertyChanged
     public ObservableCollection<Contact> Contacts
     {
         get => _contacts;
-        set { _contacts = value; OnPropertyChanged(nameof(Contacts)); }
+        set
+        {
+            _contacts = value;
+            OnPropertyChanged(nameof(Contacts));
+        }
+    }
+
+    public async Task SearchContacts(string query)
+    {
+        Contacts.Clear(); // Очистка списка перед поиском
+
+        // Проверка, чтобы запрос не был пустым
+        if (!string.IsNullOrWhiteSpace(query))
+        {
+            var contacts = await _apiService.SearchContactsAsync(query); // Передаем только query
+            Contacts = new ObservableCollection<Contact>(contacts); // Обновляем список
+        }
+        else
+        {
+            // Если запрос пустой, можно загрузить все контакты
+            await LoadContacts(); // Можете закомментировать эту строку, если не хотите загружать все контакты при пустом запросе
+        }
     }
 
     public string SearchQuery
     {
         get => _searchQuery;
-        set { _searchQuery = value; OnPropertyChanged(nameof(SearchQuery)); }
+        set
+        {
+            _searchQuery = value;
+            OnPropertyChanged(nameof(SearchQuery));
+        }
     }
 
     public MainViewModel(ApiService apiService) // Внедрение зависимости
     {
         _apiService = apiService;
         Contacts = new ObservableCollection<Contact>();
-        LoadContacts();
+        InitializeAsync(); // Запускаем асинхронную инициализацию
+    }
+
+    private async void InitializeAsync()
+    {
+        await LoadContacts(); // Вызываем асинхронный метод
     }
 
     public async Task LoadContacts()
@@ -38,25 +64,8 @@ public class MainViewModel : INotifyPropertyChanged
         Contacts = new ObservableCollection<Contact>(contacts); // Обновляем список
     }
 
-    public async Task SearchContacts(string query)
-    {
-        Contacts.Clear(); // Очистка списка перед поиском
     
-        // Проверка, чтобы запрос не был пустым
-        if (!string.IsNullOrWhiteSpace(query))
-        {
-            var contacts = await _apiService.SearchContactsAsync(query); // Передаем только query
-            Contacts = new ObservableCollection<Contact>(contacts);
-        }
-        
-    }
-
-    public async Task AddContact(Contact contact)
-    {
-        await _apiService.CreateContactAsync(contact);
-        LoadContacts(); // Обновить список контактов
-    }
-
+    
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected virtual void OnPropertyChanged(string propertyName)
@@ -64,3 +73,11 @@ public class MainViewModel : INotifyPropertyChanged
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
+
+
+/*
+ * Класс MainViewModel служит связующим звеном между пользовательским интерфейсом и логикой работы с данными о контактах.
+ * Он управляет состоянием приложения, обрабатывает ввод пользователя (например, поисковые запросы и добавление новых контактов)
+ * и взаимодействует с API для получения и изменения данных. Используя паттерн MVVM (Model-View-ViewModel),
+ * этот класс способствует более чистой архитектуре приложения, разделяя логику представления от бизнес-логики и данных.
+ */

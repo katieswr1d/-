@@ -1,6 +1,5 @@
 ﻿using ContactBook.Core.Entity;
 
-// Убедитесь, что пространство имен доступно
 
 namespace WpfApp1.Models;
 
@@ -16,3 +15,9 @@ public class ApiResponse
     public int CreationOptions { get; set; }
     public object? AsyncState { get; set; }
     public bool IsFaulted { get; set; }}
+    
+/*
+ * Класс ApiResponse предназначен для представления структуры ответа от API в приложении WPF.
+ * Он содержит информацию о результатах запроса (например, список контактов), статусе выполнения и возможных ошибках.
+ * Это позволяет удобно обрабатывать данные и состояние операции в приложении.
+*/
